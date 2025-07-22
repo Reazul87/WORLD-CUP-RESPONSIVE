@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+   /* <!-- Position with Z-index BD Flag  --> */
+
+
+.flag-green{
+height: 300px;width: 500px;background-color: green;margin: 50px 20px;
+/* display: grid;place-content: center; */
+
+position: relative;
+}
+.flag-rounded-red{
+    height: 100px;width: 100px;background-color: red;border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* z-index: 10; */
+    z-index: 2;
+}
+.flag-rounded-blue{
+    height: 100px;width: 100px;background-color: rgb(96, 15, 247);border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    z-index: 1;
+    /* z-index: 20; */
+}
+
+
+   /* <!-- box sizing & 3 way to center Item --> */
+
+
+.box-sizing{
+    height: 700px;width: 700px;background-color: rgb(0, 153, 66);margin: auto;margin-top: 60px;
+    
+   /******  Using flex  ******/
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+   /******  Using grid  ******/
+
+/* display: grid;
+place-content: center;
+place-items: center; */
+
+   /******  Using Position  ******/
+
+   /* position: relative; */
+}
+
+.content-box{
+    height: 200px;width: 200px;background-color: cadetblue;
+    /* box-sizing: content-box; */
+
+    padding: 80px;
+
+
+   /******  Using Position  ******/
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%); */
+}
+.border-box{
+    height: 200px;width: 200px;background-color: cornflowerblue;
+    box-sizing: border-box;
+
+    padding: 80px;
+}
